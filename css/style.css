@@ -1,0 +1,1001 @@
+@charset "utf-8";
+
+#wrap{
+  width: 100%;
+  background-color: #fefcfc;
+  font-size: 16px;
+  line-height: 2em;
+  color: #333;
+}
+
+figure{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.yu_mincho{
+  font-family :YuMincho,    /* Mac用 */	'Yu Mincho', /* Windows用 */ serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width:750px){
+  .sp{
+    display: none;
+  }
+}
+
+body {
+    animation: fadeIn 1.4s ease-out 0s 1 normal;
+    -webkit-animation: fadeIn 1.4s ease-out 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+/*------------ヘッダー------------*/
+header{
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0 20px 0;
+  overflow: hidden;
+}
+
+header h1{
+  height: 70px;
+  float: left;
+}
+
+header h1 img{
+  height: 70px;
+}
+
+#nav_pc{
+  float: right;
+}
+
+.icons{
+  overflow: hidden;
+  float: right;
+  margin-bottom: 15px;
+}
+
+.icons li{
+  float: left;
+  margin-left: 20px;
+}
+
+.icons li:first-child{
+  margin-left: 0;
+}
+
+.icons li img{
+  width: 20px;
+  height: 20px;
+}
+
+.navigation{
+  clear: both;
+  float: right;
+  overflow: hidden;
+}
+
+.navigation li{
+  float: left;
+  border-left: 1px solid #8c6239;
+  padding: 0 16px
+}
+
+.navigation li:last-child{
+  border-right: 1px solid #8c6239;
+}
+
+.navigation li a{
+  display: block;
+  text-decoration: none;
+  color: #8c6239;
+  font-size: 16px;
+}
+
+.navi_under_line{
+  border-bottom: 2px solid #ed1c24;
+}
+
+/*------------メインビジュアル------------*/
+#graphic_pc{
+  margin-bottom: 40px;
+  width: 100%;
+  min-width: 1000px;
+  position: relative;
+}
+
+.non_opacity{
+  opacity: 1 !important;
+}
+
+#main_photo_pc{
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#main_logo_pc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30%;
+}
+
+
+/*-------------コンテンツ--------------*/
+#contents{
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+  /*background-color: #fefcfc;*/
+}
+
+#contents h3{
+  font-size: 18px;
+  border-left: 6px solid #ed1c24;
+  text-align: center;
+  /*display: block;*/
+  margin: 0 auto 30px auto;
+  font-weight: bold;
+}
+
+#contents_left{
+  width: 700px;
+  float: left;
+}
+/*------------コンセプト------------*/
+#concept{
+  width: 700px;
+  margin-bottom: 50px;
+}
+
+#concept_box{
+  width: 100%;
+}
+
+#home #concept_box{
+  height: 860px;
+  background: url(../images/concept_photo_pc.png) no-repeat right bottom;
+}
+
+#concept_box h2{
+  font-size: 45px;
+  line-height: 1.5em;
+  color: #8c6239;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.under_line_top{
+  background: url(../images/under_line_top.png) no-repeat bottom left;
+}
+
+.under_line_bottom{
+  background: url(../images/under_line_bottom.png) no-repeat bottom left;
+}
+
+/*---------------レコメンド--------------*/
+#recommend{
+  width: 700px;
+  background-color: #c69c6d;
+  padding: 40px 0;
+  margin-bottom: 50px;
+}
+
+#recommend_box{
+  overflow: hidden;
+}
+
+#recommend_box h3{
+  width: 160px;
+  color: #f9f9f9;
+}
+
+#recommend_box figure{
+  float: left;
+  width: 220px;
+  margin: 0 0 40px 10px;
+}
+
+#recommend_box figure img{
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#recommend_box .price{
+  font-size: 14px;
+  color: #f9f9f9;
+}
+
+#recommend_box figcaption{
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #f9f9f9;
+}
+
+.btn_more{
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+  clear: both;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.btn_more a{
+  display: block;
+  text-align: center;
+  color: #8c6239;
+}
+
+/*----------------シェフ紹介----------------*/
+#chef{
+  width: 690px;
+  border: 5px double #8c6239;
+}
+
+#chef_box{
+  width: 610px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#chef_box h3{
+  width: 180px;
+  color: #8c6239;
+}
+
+#chef_box figure{
+  overflow: hidden;
+  position: relative;
+}
+
+#chef_box figure img{
+  float: left;
+  width: 225px;
+  margin-right: 60px;
+}
+
+#chef_text{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#chef_box figcaption{
+  width: 325px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+#chef_info{
+  width: 325px;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+/*----------------ショップ情報----------------*/
+#shop{
+  width: 230px;
+  float: right;
+  margin-left: 70px;
+}
+
+#shop h3{
+  width: 135px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  color: #8c6239;
+}
+
+#shop_box figure img{
+  width: 230px;
+}
+
+#shop_box figcaption{
+  margin-bottom: 10px;
+  color: #8c6239;
+  line-height: 1.5em;
+}
+
+#shop_box h5{
+  font-size: 12px;
+  color: #8c6239;
+  line-height: 1em;
+}
+
+#shop_box h5:last-of-type{
+  margin-bottom: 5px;
+}
+
+#shop_box p{
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+
+/*----------------フッター----------------*/
+footer #page_top{
+  text-align: right;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+footer #page_top a{
+  color: #8c6239;
+}
+
+#footer_box{
+  background-color: #c69c6d;
+  padding: 30px 40px;
+  color: #f9f9f9;
+}
+
+#footer_box .navigation{
+  float: none;
+}
+
+#footer_box .navigation li a{
+  color: #f9f9f9;
+}
+
+#footer_box .navigation li{
+  border-left: 1px solid #f9f9f9;
+}
+
+#footer_box .navigation li:last-child{
+  border-right: 1px solid #f9f9f9;
+}
+
+#footer_box dl{
+  float: right;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#footer_box dl dt{
+  font-size: 18px;
+}
+
+#footer_box dl dd{
+  font-size: 14px;
+}
+
+#copyright{
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*===================mobile用=======================*/
+@media screen and (max-width:750px){
+  .pc{
+    display: none;
+  }
+
+#wrap{
+  width: 100%;
+  background-color: #fefcfc;
+}
+
+/*-------------------ヘッダー--------------------*/
+header{
+  width: 100%;
+  padding: 25px 0 20px 0;
+  overflow: visible;
+}
+
+header h1{
+  height: 35px;
+  width: 80px;
+  float: none;
+  margin: 0 auto;
+}
+
+header h1 img{
+  display: block;
+  height: 35px;
+}
+
+#nav_sp{
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+
+#nav-open span:before {
+  bottom: -8px;
+}
+
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;/*最前面に*/
+  width: 80%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 180px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: rgba(255,255,255,0.92);/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(105%);
+  transform: translateX(105%);/*左に隠しておく*/
+  padding: 30px;
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+.navigation{
+  overflow: hidden;
+  float: none;
+  margin-bottom: 50px;
+}
+
+.navigation li{
+  float: none;
+  border-left: none;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.navigation li:last-child{
+  border-right: none;
+}
+
+.icons{
+  float: none;
+}
+
+#nav-content dl{
+  float: none;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+#nav-content dl dt{
+  font-size: 16px;
+}
+
+#nav-content dl dd{
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+
+
+/*-------------------メインビジュアル--------------------*/
+  #graphic_sp{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #graphic_sp img{
+    width: 100%;
+  }
+
+/*-------------コンテンツ--------------*/
+  #contents{
+    width: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  #contents h3{
+    font-size: 18px;
+    border-left: 6px solid #ed1c24;
+    text-align: center;
+    display: block;
+    margin: 0 auto 30px auto;
+    font-weight: bold;
+  }
+
+  #contents_left{
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+  /*------------コンセプト------------*/
+  #concept{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  #home #concept_box{
+    width: 100%;
+    height: 880px;
+    background: url(../images/concept_photo_mobile.png) no-repeat right bottom;
+  }
+
+  #concept_box h2{
+    font-size: 28px;
+    text-align: center;
+  }
+
+/*---------------レコメンド--------------*/
+  #recommend{
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+
+  #recommend_box{
+    overflow: hidden;
+  }
+
+  #recommend_box figure{
+    float: none;
+    width: 220px;
+    margin: 0 auto 40px auto;
+  }
+
+  .btn_more{
+    width: 70%;
+  }
+
+/*-------------------シェフ紹介---------------------*/
+  #chef{
+    width: 100%;
+    border: none;
+    background-color: #fefcfc;
+  }
+
+  #chef_box{
+    width: 80%;
+    padding: 40px 0;
+  }
+
+  #chef_box figure{
+    margin: 0 auto;
+  }
+
+  #chef_box figure img{
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  #chef_text{
+    position: static;
+  }
+
+  #chef_box figcaption{
+    width: auto;
+    text-align: center;
+  }
+
+  #chef_info{
+    width: auto;
+    text-align: center;
+  }
+
+/*----------------ショップ情報----------------*/
+  #shop{
+    background-color: #c69c6d;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  #shop h3{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+  }
+
+  #shop_box{
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  #shop_box figcaption{
+    color: #f9f9f9;
+  }
+
+  #shop_box h5{
+    color: #f9f9f9;
+  }
+
+  #shop_box p{
+    color: #f9f9f9;
+    margin-bottom: 15px;
+  }
+
+  #shop_box p:last-child{
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+/*----------------フッター----------------*/
+  footer{
+    background-color: #fefcfc;
+    padding-top: 20px;
+  }
+
+  footer #page_top{
+    text-align: right;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+  }
+
+  #footer_box{
+    background-color: #fefcfc;
+    padding: 30px 40px;
+    color: #333;
+  }
+
+  #footer_box dl{
+    float: none;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/*==========================FOOD=======================*/
+
+#category{
+  width: 120px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+  position: absolute;
+  padding: 30px 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#category p{
+  text-align: center;
+  color: #8c6239;
+  font-size: 36px;
+}
+
+#concept_box{
+  width: 100%;
+}
+
+#menu{
+  width: 700px;
+  padding: 0 0 40px 0;
+  margin-bottom: 50px;
+}
+
+#menu_box{
+  overflow: hidden;
+}
+
+#menu_box figure{
+  float: left;
+  width: 220px;
+  height: 300px;
+  margin: 0 0 40px 20px;
+}
+
+#menu_box figure:nth-child(3n+1){
+  margin-left: 0;
+}
+
+#menu_box figure img{
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#menu_box .price{
+  font-size: 14px;
+  color: #333;
+}
+
+#menu_box figcaption{
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #333;
+}
+
+#menu_box form{
+  display: inline;
+  padding-right: 5px;
+}
+
+@media screen and (max-width:750px){
+
+  #menu{
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 0;
+    background-color: #c69c6d;
+  }
+
+  #menu_box{
+    overflow: hidden;
+  }
+
+  #menu_box figure{
+    float: none;
+    width: 220px;
+    height: auto;
+    margin: 0 auto 40px auto;
+  }
+
+  #menu_box figure:nth-child(3n+1){
+    margin-left: auto;
+  }
+
+  #menu_box .price{
+    color: #f9f9f9;
+  }
+
+  #menu_box figcaption{
+    color: #f9f9f9;
+  }
+
+  #food #shop{
+    display: none;
+  }
+
+}
+
+/*======================DRINK=======================*/
+
+#wine_list{
+  background-color: #c69c6d;
+  width: 700px;
+  margin-top: 30px;
+  padding: 40px 0;
+  margin-bottom: 50px;
+  color: #f9f9f9;
+}
+
+#wine_list_box{
+  overflow: hidden;
+  background: url(../images/wine_bg.png) no-repeat right bottom;
+  background-size: 28%;
+}
+
+#wine_list_box h4{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.wine_list_col{
+  width: 193px;
+  float: left;
+  margin: 0 20px 0 20px;
+}
+
+.wine_list_col dl{
+  margin-bottom: 30px;
+  height: 130px;
+}
+
+.wine_list_col dt{
+  font-weight: bold;
+}
+
+.wine_list_col .wine_price{
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.wine_list_col .wine_description{
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.wine_list_col:last-child{
+
+}
+
+#drink_list{
+  border: 5px double #8c6239;
+  width: 690px;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  line-height: 2em;
+}
+
+#drink_list_box{
+  overflow: hidden;
+}
+
+.drink_list_col{
+  width: 315px;
+  float: left;
+  margin: 0 20px;
+}
+
+.drink_list_col:last-child{
+  margin-left: 0;
+}
+
+.drink_list_col p{
+  text-align: right;
+  font-size: 14px;
+}
+
+@media screen and (max-width:750px){
+
+  #wine_list{
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 0;
+    background-color: #c69c6d;
+  }
+
+  #wine_list_box{
+    overflow: hidden;
+    background-image: none;
+  }
+
+  .wine_list_col{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .wine_list_col dl{
+    height: auto;
+  }
+
+  #drink_list{
+    width: 90%;
+    padding: 40px 0;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .drink_list_col{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .drink_list_col:last-child{
+    margin-left: auto;
+  }
+
+  #drink #shop{
+    display: none;
+  }
+
+}
+
+/*=======================PARTY=======================*/
+
+#party_plan{
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#party_plan h3{
+  width: 300px;
+  margin-left: 0;
+}
+
+#party_plan_box{
+  border: 5px double #8c6239;
+  padding: 40px;
+}
+
+#party_plan_box h4{
+  color: #8c6239;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#party_plan_box ul{
+  margin-bottom: 40px;
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+@media screen and (max-width:750px){
+
+  #party_plan{
+    width: 90%;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+
+  #party_plan_box{
+    border: none;
+    padding: 0;
+  }
+
+  #party #shop{
+    display: none;
+  }
+
+}

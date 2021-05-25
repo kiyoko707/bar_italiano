@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+html, body {
+  height: 100%;
+  background-color: #fefcfc;
+}
+
+#wrap{
+  width: 100%;
+  font-size: 16px;
+  line-height: 2em;
+  color: #333;
+}
+
+figure{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.yu_mincho{
+  font-family :YuMincho,    /* Mac用 */	'Yu Mincho', /* Windows用 */ serif;
+  font-weight: bold;
+}
+
+.btn{
+  text-align: center;
+}
+
+.btn a{
+  display: inline-block;
+  background-color: #ddd;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+
+.arrow{
+  text-align: center;
+}
+
+.input_btn{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ddd;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+
+/*-----------------header--------------------*/
+
+header{
+  width: 1000px;
+  margin: 0 auto 100px auto;
+  padding: 40px 0 20px 0;
+  overflow: hidden;
+  border-bottom: 5px dotted #999;
+}
+
+header h1{
+  height: 70px;
+  float: left;
+}
+
+header h1 img{
+  height: 70px;
+}
+
+header h3{
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px;
+}
+
+header nav{
+  float: right;
+}
+
+/*----------------------------footer-----------------------------------*/
+footer{
+  position: absolute;
+  bottom: 0;
+}
+
+/*-------------------------menu or recomend_index--------------------------*/
+
+#contents{
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+h2{
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  font-weight: bold;
+}
+
+#new{
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+  border-bottom: 2px dotted #999;
+}
+
+#dishes{
+  padding-bottom: 70px;
+}
+
+#dishes_box{
+  overflow: hidden;
+}
+
+#dishes_box figure{
+  float: left;
+  width: 220px;
+  height: 350px;
+  margin: 0 0 40px 20px;
+}
+
+#dishes_box figure:nth-child(3n+2){
+  margin-left: 0;
+}
+
+#dishes_box figure img{
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#dishes_box .price{
+  font-size: 14px;
+  color: #333;
+}
+
+#dishes_box figcaption{
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #333;
+}
+
+#dishes_box form{
+  display: inline;
+  padding-right: 5px;
+}
+
+/*--------------------form----------------------*/
+
+#form{
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+#form p{
+  margin-bottom: 20px;
+}
+
+/*-------------------login logout---------------------*/
+
+#form p #user_id,
+#form p #password{
+  width: 300px;
+}
+
+
+
+/*===========================mobile===============================*/
+
+@media screen and (max-width:750px){
+
+  header{
+    width: 100%;
+  }
+
+  header h1{
+    height: 64px;
+    margin-left: 15px;
+  }
+
+  header h1 img{
+    height: 64px;
+  }
+
+  header h3{
+    font-size: 16px;
+    margin: 0;
+  }
+
+  header nav{
+    width: 80px;
+    margin-right: 15px;
+  }
+
+  header nav p a{
+    display: block;
+    width: 80px;
+  }
+
+  /*-------------------------menu or recomend_index--------------------------*/
+
+  #contents{
+    width: 70%;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  #dishes_box figure{
+    float: none;
+    margin: 0 auto 40px auto;
+  }
+
+  #dishes_box figure:nth-child(3n+2){
+    margin-left: auto;
+  }
+
+  /*--------------------form----------------------*/
+
+  #form{
+    width: 99%;
+    padding: 0;
+  }
+
+  #form p{
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  #form input{
+    width: 100%;
+  }
+
+  /*-------------------login logout---------------------*/
+
+  #form p #user_id,
+  #form p #password{
+    width: 90%;
+  }
+
+}
